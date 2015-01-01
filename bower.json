@@ -1,0 +1,29 @@
+{
+  "name": "formatjs",
+  "version": "0.1.0",
+  "description": "The missing JavaScript format method",
+  "main": "src/format.js",
+  "keywords": [
+    "format",
+    "string",
+    "javascript",
+    "number",
+    "date",
+    "datetime"
+  ],
+  "authors": [
+    "Nir Elbaz"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/nire0510/formatJS",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "karma.conf.js",
+    "Gruntfile.js",
+    "package.json"
+  ]
+}
