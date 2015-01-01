@@ -1,3 +1,0 @@
-describe("formatJS Library", function() {
-
-});
