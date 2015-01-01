@@ -10,7 +10,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'dist/format.min.js': 'src/format.js'
+          'dist/<%= pkg.name %>.min.js': 'src/<%= pkg.name %>.js'
         }
       }
     },

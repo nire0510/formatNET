@@ -1,8 +1,8 @@
 {
-  "name": "formatjs",
+  "name": "formatnet",
   "version": "0.1.0",
   "description": "The missing JavaScript format method",
-  "main": "src/format.js",
+  "main": "src/formatnet.js",
   "directories": {
     "test": "test"
   },
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nire0510/formatJS.git"
+    "url": "https://github.com/nire0510/formatNET.git"
   },
   "keywords": [
     "format",
@@ -30,12 +30,13 @@
     "javascript",
     "number",
     "date",
-    "datetime"
+    "datetime",
+    ".net"
   ],
   "author": "Nir Elbaz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nire0510/formatJS/issues"
+    "url": "https://github.com/nire0510/formatNET/issues"
   },
-  "homepage": "https://github.com/nire0510/formatJS"
+  "homepage": "https://github.com/nire0510/formatNET"
 }

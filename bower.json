@@ -1,21 +1,22 @@
 {
-  "name": "formatjs",
+  "name": "formatnet",
   "version": "0.1.0",
   "description": "The missing JavaScript format method",
-  "main": "src/format.js",
+  "main": "src/formatnet.js",
   "keywords": [
     "format",
     "string",
     "javascript",
     "number",
     "date",
-    "datetime"
+    "datetime",
+    ".net"
   ],
   "authors": [
     "Nir Elbaz"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/nire0510/formatJS",
+  "homepage": "https://github.com/nire0510/formatnet",
   "ignore": [
     "**/.*",
     "node_modules",
