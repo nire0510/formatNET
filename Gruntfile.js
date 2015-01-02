@@ -8,10 +8,18 @@ module.exports = function(grunt) {
       options: {
         banner: '/*\n<%= pkg.name %> v.<%= pkg.version %> - <%= pkg.description %>\n<%= grunt.template.today("dd-mm-yyyy") %>\n*/\n'
       },
-      dist: {
+      src: {
         files: {
           'dist/<%= pkg.name %>.min.js': 'src/<%= pkg.name %>.js'
         }
+      },
+      locales: {
+        files: [{
+          expand: true,
+          cwd: 'src/locales',
+          src: '**/*.js',
+          dest: 'dist/locales'
+        }]
       }
     },
 
