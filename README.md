@@ -1,11 +1,11 @@
 # formatNET
 **The missing JavaScript format method**
 
-formatNET is a lightweight JavaScript library inspired by .NET `Format` and `ToString` methods
-which allows user to replace place holders in strings and reformat numbers & dates values.
+formatNET is a lightweight JavaScript library inspired by .NET `Format` and `ToString` methods,
+which allows programmers to replace placeholders in strings and reformat numbers & dates values accordingly.
 
 ### Strings
-This is the most simple usage which reminds many JavaScript templates engines libraries.
+This is the most simple usage, which reminds many JavaScript templates engines libraries out there.
 It allows you to replace ordered placeholders in string with arguments of any type. Few examples:
 ```javascript
 'Hello, {0}'.format('Nir'); // => 'Hello, Nir'
@@ -19,20 +19,24 @@ The library current supports the **0 place holder** specifier, which replaces a 
 if one is present; otherwise, zero appears in the result string.
 The following examples demonstrate the formatting and the smart round action that is applied on formatted numbers:
 ```javascript
-new Number(1234.5678).format('00000'); // => '01235'
-new Number(1234.5678).format('0.00'); // => '1234.57'
+var num = new Number(1234.5678);
+
+num.format('00000'); // => '01235'
+num.format('0.00'); // => '1234.57'
 ```
 
 ### Dates & Times
 Dates & times can be formatted as well. You can use one of the predefined formats or write your custom format if you want:
 ```javascript
-new Date().format('M/d/yyyy'); // => '1/1/2015'
-new Date().format('MMM, dddd'); // => 'Jan, Thrsday'
+var dt = new Date();
+
+dt.format('MMM, dddd'); // => 'Jan, Thrsday'
+dt.format('shortTime'); // => 'Jan, Thrsday'
 ```
-**formatnet** offers a few built-in format templates:
+As seen above, **formatnet** offers a few built-in format templates:
 
 | Template | Description | Example |
-|:---------|:-----------:|--------:|
+|:---------|:-----------|:--------|
 | shortTime | The time, using a 12-hours clock | 2015-01-01T09:45:30 -> 9:45 AM|
 | longTime | The time with seconds, using a 12-hours clock | 2015-01-01T09:45:30 -> 9:45:30 AM|
 | shortDate | The date in numbers only | 2015-01-01T09:45:30 -> 1/1/15|
@@ -41,7 +45,7 @@ new Date().format('MMM, dddd'); // => 'Jan, Thrsday'
 In addition to the predefined templates above, you can also customize formats dates & times using the specifiers below:
 
 | Specifier | Description | Example |
-|:----------|:-----------:|--------:|
+|:----------|:-----------|:--------|
 |y | The year, from 0 to 99 | 2015-01-01T13:45:30 -> 15|
 |yy | The year, from 00 to 99 | 2015-01-01T13:45:30 -> 15|
 |yyy | The year, with a minimum of three digits | 2015-01-01T13:45:30 -> 2015|
@@ -72,7 +76,7 @@ In addition to the predefined templates above, you can also customize formats da
 #### Locales
 **formatnet** comes with a built-in dictionary which contains days & months names for en-us locale.
 when loaded, **formatnet** takes current locale from `window.navigator.language` and tries to find its dictionary.
-If it doesn't, the default language dictionary is loaded, which is **en-us**.
+If it doesn't, the default language dictionary is loaded, which is **en-us**.  
 More dictionaries are available under locales folder. To add an additional dictionary, add its file to your page, right above **formatnet** library file:
 
 ```html
